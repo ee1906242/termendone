@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>じゃんけんとiquery</title>
+</head>
+
+<body>
+    <p>こちらが期末課題へのリンクです</p>
+    <nav>
+        <a href="termend/home.html"></a>
+        <a href="../termend/home.html"></a>
+        <a href="/Users/kenjigoto/Library/Mobile Documents/com~apple~CloudDocs/ドキュメント5sem/プログラミング/termend/home.html"></a>
+    </nav>
+    <header>
+        <h1>じゃんけんとiquery </h1>
+    </header>
+
+    <div>
+        <h2>コンピュータとじゃんけん</h2>
+        <button type="button" onclick="janken(0)">ぐー</button>
+        <button type="button" onclick="janken(1)">猪木</button>
+        <button type="button" onclick="janken(2)">ぱー</button>
+    </div>
+
+    <div>
+        <h2>jQueryを使ってみる</h2>
+        <p id="test-p-1"> hoge</p>
+        <p id="test-p-2">hogehoge</p>
+        <p id="test-p-3">hogehogeho</p>
+
+<!-- jQueryの使い方  $("セレクタ").メソッド(); -->
+        <button type="button" onclick="test()">jqueryを動かす</button>
+    </div>
+
+    <!-- 外部のjavascriptファイルを読み込む -->
+    <!-- 読み込む順番が重要 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./janken.js"></script>
+
+    <!-- jQueryを使ってみる -->
+    <script src="./jQuery-test.js"></script>
+</body>
+
+</html>
